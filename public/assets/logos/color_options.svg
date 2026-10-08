@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1530 780" width="1530" height="780">
+  <rect width="100%" height="100%" fill="#F1F5F9"/>
+  <text x="40" y="64" font-family="Inter, system-ui, sans-serif" font-size="34" font-weight="800" fill="#0F172A">MailTrum — Color Palette Exploration</text>
+  <text x="40" y="100" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="500" fill="#475569">Curated color systems tested on Light and Dark UI backgrounds for B2 T-Shield</text>
+  
+    <g transform="translate(40, 140)">
+      <!-- Card background -->
+      <rect width="340" height="580" rx="20" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+      
+      <!-- Palette Title -->
+      <text x="24" y="42" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="700" fill="#0F172A">1. Electric Cobalt & Midnight</text>
+      <text x="24" y="66" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="500" fill="#64748B">Modern SaaS · Speed & Trust</text>
+      
+      <!-- Light Background Preview -->
+      <rect x="24" y="90" width="292" height="180" rx="14" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+      <g transform="translate(106, 116) scale(0.5)">
+        <g>
+      <path d="m 44,110 v 22 c 0,35.01336 20.869487,63.06271 52,81.52539 V 110 Z" fill="#0F172A"/>
+      <path d="M 160,110 V 213.52539 C 191.13051,195.06271 212,167.01336 212,132 v -22 z" fill="#0F172A"/>
+      <path d="m 60,40 c -8.8,0 -16,7.2 -16,16 v 42 h 64 v 121.92969 c 6.37056,3.05091 13.05417,5.75503 20,8.07031 6.94583,-2.31528 13.62944,-5.0194 20,-8.07031 V 98 h 64 V 56 c 0,-8.8 -7.2,-16 -16,-16 H 169.59961 L 128,80 86.400391,40 Z" fill="#2563EB"/>
+    </g>
+      </g>
+      <text x="36" y="254" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#94A3B8">LIGHT BACKGROUND</text>
+      
+      <!-- Dark Background Preview -->
+      <rect x="24" y="286" width="292" height="180" rx="14" fill="#0B132B"/>
+      <g transform="translate(106, 312) scale(0.5)">
+        <g>
+      <path d="m 44,110 v 22 c 0,35.01336 20.869487,63.06271 52,81.52539 V 110 Z" fill="#E2E8F0"/>
+      <path d="M 160,110 V 213.52539 C 191.13051,195.06271 212,167.01336 212,132 v -22 z" fill="#E2E8F0"/>
+      <path d="m 60,40 c -8.8,0 -16,7.2 -16,16 v 42 h 64 v 121.92969 c 6.37056,3.05091 13.05417,5.75503 20,8.07031 6.94583,-2.31528 13.62944,-5.0194 20,-8.07031 V 98 h 64 V 56 c 0,-8.8 -7.2,-16 -16,-16 H 169.59961 L 128,80 86.400391,40 Z" fill="#3B82F6"/>
+    </g>
+      </g>
+      <text x="36" y="450" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#64748B">DARK / NIGHT MODE</text>
+      
+      <!-- Color Swatches -->
+      <g transform="translate(24, 490)">
+        <!-- Swatch 1: Hero -->
+        <rect x="0" y="0" width="40" height="40" rx="8" fill="#2563EB"/>
+        <text x="50" y="18" font-family="Inter, monospace" font-size="12" font-weight="700" fill="#0F172A">#2563EB</text>
+        <text x="50" y="34" font-family="Inter, sans-serif" font-size="11" fill="#64748B">T-Core &amp; Dispatch</text>
+        
+        <!-- Swatch 2: Foundation -->
+        <rect x="156" y="0" width="40" height="40" rx="8" fill="#0F172A"/>
+        <text x="206" y="18" font-family="Inter, monospace" font-size="12" font-weight="700" fill="#0F172A">#0F172A</text>
+        <text x="206" y="34" font-family="Inter, sans-serif" font-size="11" fill="#64748B">Domain Shield Wings</text>
+      </g>
+    </g>
+    
+    <g transform="translate(410, 140)">
+      <!-- Card background -->
+      <rect width="340" height="580" rx="20" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+      
+      <!-- Palette Title -->
+      <text x="24" y="42" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="700" fill="#0F172A">2. Ocean Cyan & Deep Navy</text>
+      <text x="24" y="66" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="500" fill="#64748B">Cloud Platform · Deliverability</text>
+      
+      <!-- Light Background Preview -->
+      <rect x="24" y="90" width="292" height="180" rx="14" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+      <g transform="translate(106, 116) scale(0.5)">
+        <g>
+      <path d="m 44,110 v 22 c 0,35.01336 20.869487,63.06271 52,81.52539 V 110 Z" fill="#082F49"/>
+      <path d="M 160,110 V 213.52539 C 191.13051,195.06271 212,167.01336 212,132 v -22 z" fill="#082F49"/>
+      <path d="m 60,40 c -8.8,0 -16,7.2 -16,16 v 42 h 64 v 121.92969 c 6.37056,3.05091 13.05417,5.75503 20,8.07031 6.94583,-2.31528 13.62944,-5.0194 20,-8.07031 V 98 h 64 V 56 c 0,-8.8 -7.2,-16 -16,-16 H 169.59961 L 128,80 86.400391,40 Z" fill="#0284C7"/>
+    </g>
+      </g>
+      <text x="36" y="254" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#94A3B8">LIGHT BACKGROUND</text>
+      
+      <!-- Dark Background Preview -->
+      <rect x="24" y="286" width="292" height="180" rx="14" fill="#0B132B"/>
+      <g transform="translate(106, 312) scale(0.5)">
+        <g>
+      <path d="m 44,110 v 22 c 0,35.01336 20.869487,63.06271 52,81.52539 V 110 Z" fill="#F0F9FF"/>
+      <path d="M 160,110 V 213.52539 C 191.13051,195.06271 212,167.01336 212,132 v -22 z" fill="#F0F9FF"/>
+      <path d="m 60,40 c -8.8,0 -16,7.2 -16,16 v 42 h 64 v 121.92969 c 6.37056,3.05091 13.05417,5.75503 20,8.07031 6.94583,-2.31528 13.62944,-5.0194 20,-8.07031 V 98 h 64 V 56 c 0,-8.8 -7.2,-16 -16,-16 H 169.59961 L 128,80 86.400391,40 Z" fill="#38BDF8"/>
+    </g>
+      </g>
+      <text x="36" y="450" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#64748B">DARK / NIGHT MODE</text>
+      
+      <!-- Color Swatches -->
+      <g transform="translate(24, 490)">
+        <!-- Swatch 1: Hero -->
+        <rect x="0" y="0" width="40" height="40" rx="8" fill="#0284C7"/>
+        <text x="50" y="18" font-family="Inter, monospace" font-size="12" font-weight="700" fill="#0F172A">#0284C7</text>
+        <text x="50" y="34" font-family="Inter, sans-serif" font-size="11" fill="#64748B">T-Core &amp; Dispatch</text>
+        
+        <!-- Swatch 2: Foundation -->
+        <rect x="156" y="0" width="40" height="40" rx="8" fill="#082F49"/>
+        <text x="206" y="18" font-family="Inter, monospace" font-size="12" font-weight="700" fill="#0F172A">#082F49</text>
+        <text x="206" y="34" font-family="Inter, sans-serif" font-size="11" fill="#64748B">Domain Shield Wings</text>
+      </g>
+    </g>
+    
+    <g transform="translate(780, 140)">
+      <!-- Card background -->
+      <rect width="340" height="580" rx="20" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+      
+      <!-- Palette Title -->
+      <text x="24" y="42" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="700" fill="#0F172A">3. Royal Indigo & Ink</text>
+      <text x="24" y="66" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="500" fill="#64748B">Premium & Brand-Focused</text>
+      
+      <!-- Light Background Preview -->
+      <rect x="24" y="90" width="292" height="180" rx="14" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+      <g transform="translate(106, 116) scale(0.5)">
+        <g>
+      <path d="m 44,110 v 22 c 0,35.01336 20.869487,63.06271 52,81.52539 V 110 Z" fill="#1E1B4B"/>
+      <path d="M 160,110 V 213.52539 C 191.13051,195.06271 212,167.01336 212,132 v -22 z" fill="#1E1B4B"/>
+      <path d="m 60,40 c -8.8,0 -16,7.2 -16,16 v 42 h 64 v 121.92969 c 6.37056,3.05091 13.05417,5.75503 20,8.07031 6.94583,-2.31528 13.62944,-5.0194 20,-8.07031 V 98 h 64 V 56 c 0,-8.8 -7.2,-16 -16,-16 H 169.59961 L 128,80 86.400391,40 Z" fill="#4F46E5"/>
+    </g>
+      </g>
+      <text x="36" y="254" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#94A3B8">LIGHT BACKGROUND</text>
+      
+      <!-- Dark Background Preview -->
+      <rect x="24" y="286" width="292" height="180" rx="14" fill="#0B132B"/>
+      <g transform="translate(106, 312) scale(0.5)">
+        <g>
+      <path d="m 44,110 v 22 c 0,35.01336 20.869487,63.06271 52,81.52539 V 110 Z" fill="#EEF2FF"/>
+      <path d="M 160,110 V 213.52539 C 191.13051,195.06271 212,167.01336 212,132 v -22 z" fill="#EEF2FF"/>
+      <path d="m 60,40 c -8.8,0 -16,7.2 -16,16 v 42 h 64 v 121.92969 c 6.37056,3.05091 13.05417,5.75503 20,8.07031 6.94583,-2.31528 13.62944,-5.0194 20,-8.07031 V 98 h 64 V 56 c 0,-8.8 -7.2,-16 -16,-16 H 169.59961 L 128,80 86.400391,40 Z" fill="#6366F1"/>
+    </g>
+      </g>
+      <text x="36" y="450" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#64748B">DARK / NIGHT MODE</text>
+      
+      <!-- Color Swatches -->
+      <g transform="translate(24, 490)">
+        <!-- Swatch 1: Hero -->
+        <rect x="0" y="0" width="40" height="40" rx="8" fill="#4F46E5"/>
+        <text x="50" y="18" font-family="Inter, monospace" font-size="12" font-weight="700" fill="#0F172A">#4F46E5</text>
+        <text x="50" y="34" font-family="Inter, sans-serif" font-size="11" fill="#64748B">T-Core &amp; Dispatch</text>
+        
+        <!-- Swatch 2: Foundation -->
+        <rect x="156" y="0" width="40" height="40" rx="8" fill="#1E1B4B"/>
+        <text x="206" y="18" font-family="Inter, monospace" font-size="12" font-weight="700" fill="#0F172A">#1E1B4B</text>
+        <text x="206" y="34" font-family="Inter, sans-serif" font-size="11" fill="#64748B">Domain Shield Wings</text>
+      </g>
+    </g>
+    
+    <g transform="translate(1150, 140)">
+      <!-- Card background -->
+      <rect width="340" height="580" rx="20" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+      
+      <!-- Palette Title -->
+      <text x="24" y="42" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="700" fill="#0F172A">4. Nordic Teal & Obsidian</text>
+      <text x="24" y="66" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="500" fill="#64748B">Security & Verified Auth</text>
+      
+      <!-- Light Background Preview -->
+      <rect x="24" y="90" width="292" height="180" rx="14" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+      <g transform="translate(106, 116) scale(0.5)">
+        <g>
+      <path d="m 44,110 v 22 c 0,35.01336 20.869487,63.06271 52,81.52539 V 110 Z" fill="#042F2E"/>
+      <path d="M 160,110 V 213.52539 C 191.13051,195.06271 212,167.01336 212,132 v -22 z" fill="#042F2E"/>
+      <path d="m 60,40 c -8.8,0 -16,7.2 -16,16 v 42 h 64 v 121.92969 c 6.37056,3.05091 13.05417,5.75503 20,8.07031 6.94583,-2.31528 13.62944,-5.0194 20,-8.07031 V 98 h 64 V 56 c 0,-8.8 -7.2,-16 -16,-16 H 169.59961 L 128,80 86.400391,40 Z" fill="#0D9488"/>
+    </g>
+      </g>
+      <text x="36" y="254" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#94A3B8">LIGHT BACKGROUND</text>
+      
+      <!-- Dark Background Preview -->
+      <rect x="24" y="286" width="292" height="180" rx="14" fill="#0B132B"/>
+      <g transform="translate(106, 312) scale(0.5)">
+        <g>
+      <path d="m 44,110 v 22 c 0,35.01336 20.869487,63.06271 52,81.52539 V 110 Z" fill="#CCFBF1"/>
+      <path d="M 160,110 V 213.52539 C 191.13051,195.06271 212,167.01336 212,132 v -22 z" fill="#CCFBF1"/>
+      <path d="m 60,40 c -8.8,0 -16,7.2 -16,16 v 42 h 64 v 121.92969 c 6.37056,3.05091 13.05417,5.75503 20,8.07031 6.94583,-2.31528 13.62944,-5.0194 20,-8.07031 V 98 h 64 V 56 c 0,-8.8 -7.2,-16 -16,-16 H 169.59961 L 128,80 86.400391,40 Z" fill="#14B8A6"/>
+    </g>
+      </g>
+      <text x="36" y="450" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#64748B">DARK / NIGHT MODE</text>
+      
+      <!-- Color Swatches -->
+      <g transform="translate(24, 490)">
+        <!-- Swatch 1: Hero -->
+        <rect x="0" y="0" width="40" height="40" rx="8" fill="#0D9488"/>
+        <text x="50" y="18" font-family="Inter, monospace" font-size="12" font-weight="700" fill="#0F172A">#0D9488</text>
+        <text x="50" y="34" font-family="Inter, sans-serif" font-size="11" fill="#64748B">T-Core &amp; Dispatch</text>
+        
+        <!-- Swatch 2: Foundation -->
+        <rect x="156" y="0" width="40" height="40" rx="8" fill="#042F2E"/>
+        <text x="206" y="18" font-family="Inter, monospace" font-size="12" font-weight="700" fill="#0F172A">#042F2E</text>
+        <text x="206" y="34" font-family="Inter, sans-serif" font-size="11" fill="#64748B">Domain Shield Wings</text>
+      </g>
+    </g>
+    
+</svg>

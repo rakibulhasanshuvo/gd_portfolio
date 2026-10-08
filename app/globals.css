@@ -1,0 +1,327 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Behance Zine & Streetwear Collage Palette */
+    --bg-dark: #111114;
+    --bg-dark-card: #18181c;
+    --bg-paper: #f6f5f0;
+    --bg-paper-card: #ffffff;
+    --bg-paper-subtle: #eceae3;
+    
+    --border-dark: #27272a;
+    --border-paper: #e4e1d7;
+    --border-strong: #0f1012;
+    
+    --text-primary: #0f1012;
+    --text-secondary: #3f3f46;
+    --text-muted: #71717a;
+    --text-light: #f4f4f5;
+    
+    --accent-yellow: #f5b800;
+    --accent-yellow-hover: #ffc700;
+    --accent-red: #e63946;
+    --accent-blue: #0052ff;
+    --accent-orange: #ff6b00;
+
+    --font-marker: var(--font-marker), 'Permanent Marker', cursive, sans-serif;
+    --font-syne: var(--font-syne), 'Syne', sans-serif;
+    --font-space: var(--font-space), 'Space Grotesk', sans-serif;
+    --font-display: var(--font-syne), 'Syne', sans-serif;
+    --font-body: var(--font-space), 'Space Grotesk', sans-serif;
+    --font-mono: var(--font-mono), 'JetBrains Mono', monospace;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--bg-paper);
+    color: var(--text-primary);
+  }
+
+  body {
+    background-color: var(--bg-paper);
+    color: var(--text-primary);
+    font-family: var(--font-body), sans-serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+    letter-spacing: -0.01em;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display), sans-serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Typography Utility Shortcuts */
+.font-marker {
+  font-family: var(--font-marker), cursive, sans-serif;
+}
+.font-syne {
+  font-family: var(--font-syne), sans-serif;
+}
+.font-space {
+  font-family: var(--font-space), sans-serif;
+}
+.font-russo {
+  font-family: var(--font-russo), 'Russo One', sans-serif;
+}
+.font-chakra {
+  font-family: var(--font-chakra), 'Chakra Petch', sans-serif;
+}
+
+/* Halftone Paper Stipple Background */
+.halftone-paper {
+  background-image: radial-gradient(rgba(17, 17, 20, 0.08) 1.25px, transparent 1.25px);
+  background-size: 16px 16px;
+  pointer-events: none;
+}
+
+/* Authentic Behance 3D Title Extrusions */
+.extrude-title-white {
+  color: #ffffff;
+  -webkit-text-stroke: 2px #000000;
+  text-shadow: 
+    2px 2px 0px #000000,
+    4px 4px 0px #000000,
+    6px 6px 8px rgba(0, 0, 0, 0.45);
+}
+
+.extrude-title-yellow {
+  color: #f5b800;
+  -webkit-text-stroke: 2px #000000;
+  text-shadow: 
+    2px 2px 0px #000000,
+    3.5px 3.5px 0px #c28d00,
+    5px 5px 0px #8f6700,
+    6.5px 6.5px 0px #000000,
+    8.5px 8.5px 0px #000000,
+    11px 11px 16px rgba(0, 0, 0, 0.55);
+}
+
+/* 3D Extruded Text Styles */
+.extrude-3d-yellow {
+  color: #f5b800;
+  text-shadow: 
+    1.5px 1.5px 0px #000,
+    3px 3px 0px #c99300,
+    4.5px 4.5px 0px #996f00,
+    6px 6px 0px #000,
+    8px 8px 12px rgba(0, 0, 0, 0.4);
+}
+
+.extrude-3d-white {
+  color: #ffffff;
+  text-shadow: 
+    1.5px 1.5px 0px #000,
+    3px 3px 0px #d4d4d8,
+    4.5px 4.5px 0px #000,
+    7px 7px 10px rgba(0, 0, 0, 0.35);
+}
+
+.extrude-3d-red {
+  color: #e63946;
+  text-shadow: 
+    1.5px 1.5px 0px #000,
+    3px 3px 0px #b91c1c,
+    4.5px 4.5px 0px #7f1d1d,
+    6px 6px 0px #000,
+    8px 8px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Brutalist Offset Sticker Shadows */
+.sticker-shadow {
+  box-shadow: 4px 4px 0px #000000;
+  border: 1.5px solid #000000;
+}
+
+.sticker-shadow-lg {
+  box-shadow: 6px 6px 0px #000000;
+  border: 2px solid #000000;
+}
+
+.sticker-shadow-hover {
+  box-shadow: 4px 4px 0px #000000;
+  border: 1.5px solid #000000;
+  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.sticker-shadow-hover:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px #000000;
+}
+
+/* Distressed Duct Tape Ribbon Utility */
+.tape-strip {
+  position: relative;
+  background-color: #111114;
+  color: #ffffff;
+  padding: 0.5rem 1.5rem;
+  font-family: var(--font-marker), cursive;
+  letter-spacing: 0.05em;
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.25);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.tape-strip::before,
+.tape-strip::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 8px;
+  background-size: 8px 8px;
+}
+.tape-strip::before {
+  left: -8px;
+  background: radial-gradient(circle at 0 4px, transparent 4px, #111114 4.5px);
+}
+.tape-strip::after {
+  right: -8px;
+  background: radial-gradient(circle at 8px 4px, transparent 4px, #111114 4.5px);
+}
+
+/* CRT Monitor Screen Glare & Scanlines */
+.crt-screen {
+  position: relative;
+  overflow: hidden;
+}
+.crt-screen::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 2;
+  background-size: 100% 3px, 6px 100%;
+  pointer-events: none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-canvas);
+}
+::-webkit-scrollbar-thumb {
+  background: #cfdfd4;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a9c2b1;
+}
+
+/* Marquee Animations */
+@keyframes marqueeLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marqueeRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-marquee-left {
+  display: flex;
+  width: 200%;
+  animation: marqueeLeft 35s linear infinite;
+}
+
+.animate-marquee-left:hover {
+  animation-play-state: paused;
+}
+
+.animate-marquee-right {
+  display: flex;
+  width: 200%;
+  animation: marqueeRight 38s linear infinite;
+}
+
+.animate-marquee-right:hover {
+  animation-play-state: paused;
+}
+
+/* Prepress Registration Target Graphic */
+.reg-mark {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+}
+.reg-mark::before,
+.reg-mark::after {
+  content: '';
+  position: absolute;
+  background: currentColor;
+}
+.reg-mark::before {
+  top: 6px;
+  left: 0;
+  width: 14px;
+  height: 2px;
+}
+.reg-mark::after {
+  top: 0;
+  left: 6px;
+  width: 2px;
+  height: 14px;
+}
+
+/* Bento Pill Badges */
+.badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  padding: 0.3rem 0.75rem;
+  border-radius: 9999px;
+  border: 1px solid #cfdfd4;
+  background-color: #ffffff;
+  color: var(--text-primary);
+  box-shadow: 0 1px 2px rgba(15, 29, 22, 0.03);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  user-select: none;
+}
+.badge-pill:hover {
+  border-color: #a9c2b1;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(15, 29, 22, 0.05);
+}
+
+/* Bento Card Utility */
+.bento-card {
+  background-color: #ffffff;
+  border: 1px solid #cfdfd4;
+  border-radius: 1.25rem;
+  box-shadow: 0 1px 3px rgba(15, 29, 22, 0.02), 0 8px 24px -6px rgba(15, 29, 22, 0.04);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.bento-card:hover {
+  border-color: #b8cfc1;
+  box-shadow: 0 4px 6px -1px rgba(15, 29, 22, 0.03), 0 20px 30px -10px rgba(15, 29, 22, 0.08);
+  transform: translateY(-2px);
+}
+
+/* Modern CSS containment to defer offscreen layout & paint */
+.section-deferred {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 900px;
+}
+
