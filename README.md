@@ -2,11 +2,14 @@
 
 > High-impact visual design, production-engineered commercial screen-print packaging (500+ bag runs), corporate brand identity systems, and high-converting marketing collateral.
 
+[![Live Site](https://img.shields.io/badge/Live_Site-gdportfolio--omega.vercel.app-0052ff?style=flat&logo=vercel)](https://gdportfolio-omega.vercel.app/)
 [![Next.js](https://img.shields.io/badge/Next.js-16.3.8-black?style=flat&logo=next.js)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19.2-blue?style=flat&logo=react)](https://react.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38bdf8?style=flat&logo=tailwindcss)](https://tailwindcss.com/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178c6?style=flat&logo=typescript)](https://www.typescriptlang.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+🔗 **Live Portfolio**: [https://gdportfolio-omega.vercel.app/](https://gdportfolio-omega.vercel.app/)
 
 ---
 
@@ -126,6 +129,7 @@ npx tsc --noEmit
 *Visual & UI Designer | Brand & Graphic Specialist*
 
 - 📍 Location: Dhaka, Bangladesh
+- 🌐 Live Portfolio: [gdportfolio-omega.vercel.app](https://gdportfolio-omega.vercel.app/)
 - ✉️ Email: [m.rakibul.h45@gmail.com](mailto:m.rakibul.h45@gmail.com)
 - 💼 LinkedIn: [linkedin.com/in/muhammad-rakibul-hasan-shuvo-5783363a0](https://www.linkedin.com/in/muhammad-rakibul-hasan-shuvo-5783363a0/)
 - 🎨 Behance: [behance.net/rakibulhasanshuvo](https://behance.net/rakibulhasanshuvo)

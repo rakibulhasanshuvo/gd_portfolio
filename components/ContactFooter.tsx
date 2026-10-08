@@ -141,6 +141,15 @@ export default function ContactFooter() {
           <div className="flex flex-wrap items-center gap-4">
             <span className="text-neutral-500">DIRECT PLATFORMS:</span>
             <a
+              href={DESIGNER_INFO.links.portfolio}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-[#0052ff] transition-colors flex items-center gap-1 font-semibold"
+            >
+              <span>Portfolio</span>
+              <ExternalLink className="w-3 h-3 text-[#0052ff]" />
+            </a>
+            <a
               href={DESIGNER_INFO.links.behance}
               target="_blank"
               rel="noopener noreferrer"
@@ -170,7 +179,7 @@ export default function ContactFooter() {
           </div>
 
           <div className="text-neutral-500 text-[11px]">
-            © 2025 {DESIGNER_INFO.name}. All vector assets registered.
+            © 2026 {DESIGNER_INFO.name}. All vector assets registered.
           </div>
         </div>
 

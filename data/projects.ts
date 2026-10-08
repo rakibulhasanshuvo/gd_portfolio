@@ -587,6 +587,7 @@ export const DESIGNER_INFO = {
     { name: 'Modern Web / UI', level: 'Intermediate', desc: 'Design Tokens, CSS / Tailwind, Responsive Systems, Git' }
   ],
   links: {
+    portfolio: 'https://gdportfolio-omega.vercel.app/',
     cv: '/cv.html',
     behance: 'https://behance.net/rakibulhasanshuvo',
     linkedin: 'https://www.linkedin.com/in/muhammad-rakibul-hasan-shuvo-5783363a0/',
