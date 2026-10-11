@@ -274,7 +274,7 @@ export default function PrepressVisualizer() {
                       PLATE SEPARATION CONTROLLER
                     </h3>
                   </div>
-                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                  <span className="w-2 h-2 rounded-full bg-emerald-400" />
                 </div>
 
                 {/* 4 Interactive Film Switches */}

@@ -60,7 +60,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://gdportfolio-omega.vercel.app"),
-  title: "Muhammad Rakibul Hasan Shuvo — Visual & UI Designer | Brand & Graphic Specialist",
+  title: "Muhammad Rakibul Hasan Shuvo | Visual & UI Designer | Brand & Graphic Specialist",
   description: "Graphic design, commercial screen-print packaging (500+ bags), logo identity systems, and high-impact poster design by Muhammad Rakibul Hasan Shuvo.",
   keywords: [
     "Graphic Designer Portfolio",
@@ -74,7 +74,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Muhammad Rakibul Hasan Shuvo" }],
   openGraph: {
-    title: "Muhammad Rakibul Hasan Shuvo — Visual & UI Designer",
+    title: "Muhammad Rakibul Hasan Shuvo | Visual & UI Designer",
     description: "Precision graphic and UI designer portfolio featuring commercial screen-print packaging, brandmark systems, and digital interfaces.",
     url: "https://gdportfolio-omega.vercel.app",
     siteName: "Muhammad Rakibul Hasan Shuvo Portfolio",

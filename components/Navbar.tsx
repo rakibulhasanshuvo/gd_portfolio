@@ -58,7 +58,6 @@ export default function Navbar() {
           <div>
             <div className="font-syne font-black tracking-tight text-sm text-white flex items-center gap-1.5 uppercase">
               <span>CREATED BY SHUVO</span>
-              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
             </div>
             <p className="text-[10px] font-mono text-zinc-400 tracking-wider uppercase">
               Visual & UI Designer // Vol 01

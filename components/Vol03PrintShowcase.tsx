@@ -89,7 +89,7 @@ export default function Vol03PrintShowcase() {
             <span className="font-mono text-xl sm:text-2xl text-black font-black select-none">\ | /</span>
             <div className="inline-block bg-[#e11d48] text-white px-6 py-2 rounded-lg border-2 border-black shadow-[4px_4px_0px_rgba(0,0,0,0.85)] -rotate-1">
               <span className="font-chakra font-black tracking-widest text-lg sm:text-xl uppercase">
-                VOL — 03
+                VOLUME 03: PRINT
               </span>
             </div>
             <span className="font-mono text-xl sm:text-2xl text-black font-black select-none">\ | /</span>

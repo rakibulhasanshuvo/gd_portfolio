@@ -11,7 +11,7 @@ export default function RetroTVSticker({ className = "" }: RetroTVStickerProps) 
   const [channel, setChannel] = useState(0);
 
   const channels = [
-    { title: "PORTFOLIO 2026", subtitle: "VOL — 01 ARCHIVE", tag: "ON AIR", color: "#f3b72b" },
+    { title: "PORTFOLIO 2026", subtitle: "PACKAGING ARCHIVE", tag: "ON AIR", color: "#f3b72b" },
     { title: "500+ BAG RUNS", subtitle: "ZERO BLEED RECORD", tag: "COMMERCIAL", color: "#0052ff" },
     { title: "BOU CSE // AI", subtitle: "TOKYO / JICA CERT", tag: "CREDENTIALS", color: "#10b981" },
     { title: "SMPTE BARS", subtitle: "COLOR CALIBRATION", tag: "TEST PATTERN", color: "#ef4444" },

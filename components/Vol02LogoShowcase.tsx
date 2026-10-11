@@ -73,7 +73,7 @@ export default function Vol02LogoShowcase() {
             <span className="font-mono text-xl sm:text-2xl text-black font-black select-none">\ | /</span>
             <div className="inline-block bg-[#0052ff] text-white px-6 py-2 rounded-lg border-2 border-black shadow-[4px_4px_0px_rgba(0,0,0,0.85)] rotate-1">
               <span className="font-chakra font-black tracking-widest text-lg sm:text-xl uppercase">
-                VOL — 02
+                VOLUME 02: BRAND IDENTITIES
               </span>
             </div>
             <span className="font-mono text-xl sm:text-2xl text-black font-black select-none">\ | /</span>
@@ -84,7 +84,6 @@ export default function Vol02LogoShowcase() {
             <h2 className="font-syne font-black text-4xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight uppercase italic drop-shadow-md">
               <span className="extrude-3d-yellow inline-block">Brand</span>{" "}
               <span className="extrude-3d-white inline-block">Identities</span>
-              <span className="inline-block ml-3 text-3xl sm:text-5xl not-italic">⚡</span>
             </h2>
             <p className="font-mono text-xs sm:text-sm uppercase tracking-widest text-zinc-600 mt-3 font-semibold">
               SWISS PRECISION MONOGRAMS // MODULAR GRIDS // SCALE TESTED 16PX TO SIGNAGE
@@ -118,7 +117,7 @@ export default function Vol02LogoShowcase() {
                         : "bg-[#232328] text-zinc-300 border-zinc-700 hover:bg-[#2d2d34] hover:text-white"
                     }`}
                   >
-                    <span>{proj.title.split("—")[0].trim()}</span>
+                    <span>{proj.title.split(/[:—]/)[0].trim()}</span>
                   </button>
                 );
               })}
@@ -126,7 +125,7 @@ export default function Vol02LogoShowcase() {
 
             <div className="flex items-center gap-2">
               <span className="px-3 py-1 rounded-full bg-[#27272a] border border-zinc-700 font-mono text-xs text-emerald-400 font-bold flex items-center gap-1.5">
-                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
                 {currentProject.code}
               </span>
               <span className="px-3 py-1 rounded-full bg-[#27272a] border border-zinc-700 font-mono text-xs text-[#f5b800] font-bold">
@@ -479,64 +478,130 @@ export default function Vol02LogoShowcase() {
             </span>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
-            {secondaryProjects.map((proj) => (
+          {/* Asymmetric Curated Identity Systems (Breaks generic 3-card symmetry) */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            
+            {/* Primary System Plate (7 Cols) */}
+            {secondaryProjects[0] && (
               <div
-                key={proj.id}
-                onClick={() => handleBrandSelect(proj.id)}
-                className="group relative bg-white rounded-2xl border-3 border-black p-5 shadow-[6px_6px_0px_#000000] hover:shadow-[9px_9px_0px_#000000] hover:-translate-y-1 transition-all cursor-pointer flex flex-col justify-between"
+                onClick={() => handleBrandSelect(secondaryProjects[0].id)}
+                className="lg:col-span-7 group relative bg-white rounded-3xl border-3 border-black p-6 sm:p-8 shadow-[8px_8px_0px_#000000] hover:shadow-[12px_12px_0px_#0052ff] hover:-translate-y-1.5 transition-all cursor-pointer flex flex-col justify-between"
               >
-                {/* Top Badge Row */}
-                <div className="flex items-center justify-between pb-3 border-b border-zinc-200">
-                  <span className="font-mono text-xs font-black px-2.5 py-0.5 bg-[#0052ff] text-white rounded-full">
-                    {proj.code}
-                  </span>
-                  <span className="font-mono text-[11px] text-zinc-500 font-bold uppercase">
-                    {proj.categoryLabel}
-                  </span>
-                </div>
-
-                {/* Mockup Preview Area */}
-                <div className="relative aspect-[16/10] my-4 rounded-xl overflow-hidden bg-[#16161a] border border-zinc-300 p-2 flex items-center justify-center">
-                  <Image
-                    src={proj.mockupImage || proj.primaryImage}
-                    alt={proj.title}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 400px"
-                    className="object-contain group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                {/* Title and Meta */}
                 <div>
-                  <h4 className="font-syne font-black text-lg text-black uppercase tracking-tight group-hover:text-[#0052ff] transition-colors">
-                    {proj.title}
-                  </h4>
-                  <p className="font-mono text-xs text-zinc-600 mt-1 line-clamp-2">
-                    {proj.subtitle}
-                  </p>
-
-                  {/* Palette dots + Button */}
-                  <div className="flex items-center justify-between mt-4 pt-3 border-t border-zinc-200">
-                    <div className="flex items-center gap-1.5">
-                      {proj.palette.map((c, i) => (
-                        <span
-                          key={i}
-                          className="w-3.5 h-3.5 rounded-full border border-black/30"
-                          style={{ backgroundColor: c }}
-                        />
-                      ))}
-                    </div>
-
-                    <span className="font-mono text-xs font-bold text-[#0052ff] flex items-center gap-1 group-hover:translate-x-1 transition-transform">
-                      <span>LOAD SUITE</span>
-                      <ArrowUpRight className="w-3.5 h-3.5" />
+                  <div className="flex items-center justify-between pb-3 border-b border-zinc-200">
+                    <span className="font-mono text-xs font-black px-3 py-1 bg-[#0052ff] text-white rounded-full">
+                      {secondaryProjects[0].code}
                     </span>
+                    <span className="font-mono text-xs text-zinc-500 font-bold uppercase">
+                      {secondaryProjects[0].categoryLabel} · FEATURED SUITE
+                    </span>
+                  </div>
+
+                  <div className="relative aspect-16/10 my-5 rounded-2xl overflow-hidden bg-[#16161a] border-2 border-zinc-300 p-4 flex items-center justify-center">
+                    <Image
+                      src={secondaryProjects[0].mockupImage || secondaryProjects[0].primaryImage}
+                      alt={secondaryProjects[0].title}
+                      fill
+                      sizes="(max-width: 1024px) 100vw, 55vw"
+                      className="object-contain group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+
+                  <div>
+                    <h4 className="font-syne font-black text-2xl text-black uppercase tracking-tight group-hover:text-[#0052ff] transition-colors">
+                      {secondaryProjects[0].title}
+                    </h4>
+                    <p className="font-space text-sm text-zinc-700 mt-2 leading-relaxed">
+                      {secondaryProjects[0].subtitle}
+                    </p>
+
+                    <div className="grid grid-cols-2 gap-3 mt-4 pt-4 border-t border-black/10 font-mono text-xs">
+                      <div className="bg-[#f6f5f0] p-2.5 rounded-lg border border-black/15">
+                        <span className="text-zinc-500 text-[10px] block uppercase font-bold">GRID ARCHITECTURE</span>
+                        <span className="font-bold text-[#0f1012]">Modular Unit System</span>
+                      </div>
+                      <div className="bg-[#f6f5f0] p-2.5 rounded-lg border border-black/15">
+                        <span className="text-zinc-500 text-[10px] block uppercase font-bold">SCALE RANGE</span>
+                        <span className="font-bold text-[#0f1012]">16px Favicon to Signage</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
+                <div className="mt-6 pt-4 border-t border-black/10 flex items-center justify-between">
+                  <div className="flex items-center gap-1.5">
+                    <span className="font-mono text-[10px] uppercase text-zinc-500 font-bold mr-1">PALETTE:</span>
+                    {secondaryProjects[0].palette.map((c, i) => (
+                      <span
+                        key={i}
+                        className="w-4 h-4 rounded-full border border-black/30"
+                        style={{ backgroundColor: c }}
+                        title={c}
+                      />
+                    ))}
+                  </div>
+
+                  <span className="font-mono text-xs font-bold text-[#0052ff] flex items-center gap-1.5 uppercase group-hover:translate-x-1 transition-transform">
+                    <span>LOAD SYSTEM TO WORKBENCH</span>
+                    <ArrowUpRight className="w-4 h-4 stroke-[2.5]" />
+                  </span>
+                </div>
               </div>
-            ))}
+            )}
+
+            {/* Stacked Companion Identifiers (5 Cols) */}
+            <div className="lg:col-span-5 flex flex-col gap-6">
+              {secondaryProjects.slice(1).map((proj) => (
+                <div
+                  key={proj.id}
+                  onClick={() => handleBrandSelect(proj.id)}
+                  className="group relative bg-white rounded-3xl border-3 border-black p-5 sm:p-6 shadow-[6px_6px_0px_#000000] hover:shadow-[10px_10px_0px_#0052ff] hover:-translate-y-1 transition-all cursor-pointer"
+                >
+                  <div className="flex flex-col sm:flex-row gap-5 items-start">
+                    <div className="relative aspect-4/3 sm:aspect-square w-full sm:w-36 bg-[#16161a] rounded-xl overflow-hidden border-2 border-black shrink-0 p-2 flex items-center justify-center">
+                      <Image
+                        src={proj.mockupImage || proj.primaryImage}
+                        alt={proj.title}
+                        fill
+                        sizes="200px"
+                        className="object-contain group-hover:scale-105 transition-transform duration-300"
+                      />
+                      <div className="absolute top-2 right-2 bg-[#0052ff] text-white px-2 py-0.5 rounded font-mono text-[9px] font-bold">
+                        {proj.code}
+                      </div>
+                    </div>
+
+                    <div className="flex-1 min-w-0">
+                      <div className="font-mono text-[11px] text-zinc-500 uppercase font-bold">
+                        {proj.categoryLabel}
+                      </div>
+                      <h4 className="font-syne font-black text-lg sm:text-xl text-black group-hover:text-[#0052ff] transition-colors leading-tight mt-1">
+                        {proj.title}
+                      </h4>
+                      <p className="font-space text-xs text-zinc-600 mt-1.5 leading-relaxed line-clamp-2">
+                        {proj.subtitle}
+                      </p>
+
+                      <div className="mt-3 pt-3 border-t border-black/10 flex items-center justify-between text-xs font-mono">
+                        <div className="flex items-center gap-1">
+                          {proj.palette.slice(0, 3).map((c, i) => (
+                            <span
+                              key={i}
+                              className="w-3 h-3 rounded-full border border-black/30"
+                              style={{ backgroundColor: c }}
+                            />
+                          ))}
+                        </div>
+                        <span className="text-[#0052ff] font-bold flex items-center gap-0.5">
+                          ACTIVATE <ArrowUpRight className="w-3 h-3" />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
           </div>
 
         </div>

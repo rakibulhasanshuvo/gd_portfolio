@@ -222,7 +222,7 @@ export const PROJECTS: Project[] = [
   {
     id: 'created-by-shuvo-logo',
     code: 'ID-001',
-    title: 'Created by Shuvo — Brand System',
+    title: 'Created by Shuvo: Brand Identity System',
     subtitle: 'Personal designer monogram symbol & full horizontal / stacked lockups',
     category: 'logos',
     categoryLabel: 'Brand Identity',
@@ -255,7 +255,7 @@ export const PROJECTS: Project[] = [
   {
     id: 'mailtrum-logo',
     code: 'ID-002',
-    title: 'MAILTRUM — Cloud Brand Matrix',
+    title: 'Mailtrum: Cloud Protocol Brand System',
     subtitle: 'Dynamic email platform brand system with multi-palette showcase lockups',
     category: 'logos',
     categoryLabel: 'Tech Brand System',

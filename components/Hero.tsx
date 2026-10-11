@@ -148,10 +148,9 @@ export default function Hero() {
                 {/* Subtle Card Background Grain */}
                 <div className="absolute inset-0 bg-[radial-gradient(#000000_1px,transparent_1px)] bg-[size:10px_10px] opacity-5 pointer-events-none" />
 
-                {/* Specimen Header */}
+                {/* Telemetry Header */}
                 <div className="font-mono text-[10px] text-zinc-500 uppercase tracking-widest flex items-center justify-between mb-2">
-                  <span>SPECIMEN // 0{i + 1}</span>
-                  <span className="w-2 h-2 rounded-full bg-[#f5b800] group-hover:scale-125 transition-transform" />
+                  <span>METRIC VERIFICATION</span>
                 </div>
 
                 {/* Big Number */}

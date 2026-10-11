@@ -18,6 +18,9 @@ export default function Vol01PackagingShowcase() {
   const stripProjects = PROJECTS.filter((p) =>
     ["stylex-wear-bag", "mivara-bag", "ome-sports-bag"].includes(p.id)
   );
+  const stylexProject = stripProjects.find((p) => p.id === "stylex-wear-bag") || stripProjects[0];
+  const mivaraProject = stripProjects.find((p) => p.id === "mivara-bag");
+  const omeProject = stripProjects.find((p) => p.id === "ome-sports-bag");
 
   const handleOpen = (project: Project) => {
     sound.click(1050);
@@ -43,7 +46,7 @@ export default function Vol01PackagingShowcase() {
             <span className="font-mono text-xl sm:text-2xl text-black font-black select-none">\ | /</span>
             <div className="inline-block bg-[#121215] text-white px-6 py-2 rounded-lg border-2 border-black shadow-[4px_4px_0px_rgba(0,0,0,0.85)] -rotate-1">
               <span className="font-chakra font-black tracking-widest text-lg sm:text-xl uppercase">
-                VOL — 01
+                VOLUME 01: PACKAGING FLEET
               </span>
             </div>
             <span className="font-mono text-xl sm:text-2xl text-black font-black select-none">\ | /</span>
@@ -75,7 +78,7 @@ export default function Vol01PackagingShowcase() {
           {/* Top Status Header */}
           <div className="relative z-10 flex flex-wrap items-center justify-between gap-4 pb-6 border-b border-zinc-800">
             <div className="flex items-center gap-3">
-              <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
+              <span className="w-2 h-2 rounded-full bg-emerald-400" />
               <span className="font-mono text-xs uppercase tracking-widest text-[#f5b800] font-bold">
                 FEATURED PACKAGING // PKG-001
               </span>
@@ -265,36 +268,34 @@ export default function Vol01PackagingShowcase() {
             </span>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {stripProjects.map((project, idx) => (
+          {/* Asymmetric Curated Lookbook (Breaks generic 3-card symmetry) */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            
+            {/* Lead Feature Dossier: Stylex Wear (7 Cols) */}
+            {stylexProject && (
               <div
-                key={project.id}
-                onClick={() => handleOpen(project)}
-                className="group relative cursor-pointer select-none bg-white rounded-2xl border-3 border-black p-4 shadow-[6px_6px_0px_#000000] hover:shadow-[8px_8px_0px_#0052ff] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between"
+                onClick={() => handleOpen(stylexProject)}
+                className="lg:col-span-7 group relative cursor-pointer select-none bg-white rounded-3xl border-3 border-black p-6 sm:p-8 shadow-[8px_8px_0px_#000000] hover:shadow-[12px_12px_0px_#0052ff] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between"
               >
                 {/* Duct Tape Accent on Top Edge */}
-                <div 
-                  className={`absolute -top-3 ${
-                    idx % 2 === 0 ? "left-8 -rotate-3" : "right-8 rotate-3"
-                  } w-16 h-6 bg-[#f5b800]/90 border border-black/40 z-20 pointer-events-none shadow-xs`} 
-                />
+                <div className="absolute -top-3 left-10 w-24 h-7 bg-[#f5b800]/90 border border-black/40 -rotate-2 z-20 pointer-events-none shadow-xs" />
 
                 <div>
                   {/* Photo Canvas Container */}
-                  <div className="relative aspect-4/3 w-full bg-zinc-900 rounded-xl overflow-hidden border-2 border-black flex items-center justify-center">
-                    {project.mockupImage ? (
+                  <div className="relative aspect-16/10 w-full bg-zinc-950 rounded-2xl overflow-hidden border-2 border-black flex items-center justify-center">
+                    {stylexProject.mockupImage ? (
                       <Image
-                        src={project.mockupImage}
-                        alt={project.title}
+                        src={stylexProject.mockupImage}
+                        alt={stylexProject.title}
                         fill
                         className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
-                        sizes="(max-width: 768px) 100vw, 33vw"
+                        sizes="(max-width: 1024px) 100vw, 55vw"
                       />
                     ) : (
-                      <div className="relative w-full h-full bg-[#f0eee6] p-4 flex items-center justify-center">
+                      <div className="relative w-full h-full bg-[#f0eee6] p-6 flex items-center justify-center">
                         <Image
-                          src={project.primaryImage}
-                          alt={project.title}
+                          src={stylexProject.primaryImage}
+                          alt={stylexProject.title}
                           fill
                           className="object-contain p-4"
                           unoptimized
@@ -302,61 +303,180 @@ export default function Vol01PackagingShowcase() {
                       </div>
                     )}
 
-                    {/* Badge: Code */}
-                    <div className="absolute top-2.5 right-2.5 bg-black text-white px-2.5 py-0.5 rounded font-mono text-[10px] tracking-wider uppercase font-bold border border-zinc-700">
-                      {project.code}
+                    <div className="absolute top-3 right-3 bg-black text-white px-3 py-1 rounded font-mono text-[11px] tracking-wider uppercase font-bold border border-zinc-700">
+                      {stylexProject.code}
                     </div>
 
-                    {/* Prepress Tag */}
-                    <div className="absolute bottom-2.5 left-2.5 bg-black/85 backdrop-blur-xs text-[#f5b800] px-2.5 py-0.5 rounded font-mono text-[10px] tracking-wider uppercase font-bold border border-zinc-800">
-                      {project.categoryLabel}
+                    <div className="absolute bottom-3 left-3 bg-black/90 backdrop-blur-xs text-[#f5b800] px-3 py-1 rounded font-mono text-[11px] tracking-wider uppercase font-bold border border-zinc-800">
+                      FEATURED RETAIL SUITE
                     </div>
 
-                    {/* Hover Overlay */}
                     <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center justify-center gap-2 text-white font-syne font-bold text-xs uppercase tracking-wider">
                       <Eye className="w-4 h-4 text-[#f5b800]" />
-                      <span>INSPECT DIE-LINE</span>
+                      <span>INSPECT FULL ARCHITECTURE</span>
                     </div>
                   </div>
 
-                  {/* Editorial Typography Content */}
-                  <div className="mt-4">
+                  {/* Typography & Production Context */}
+                  <div className="mt-6">
                     <div className="flex items-center justify-between font-mono text-xs text-zinc-500 mb-1">
-                      <span>{project.client}</span>
-                      <span>{project.year}</span>
+                      <span>{stylexProject.client}</span>
+                      <span>{stylexProject.year} · MULTI-LAYER SPOT INKS</span>
                     </div>
 
-                    <h4 className="font-syne font-black text-xl sm:text-2xl text-[#0f1012] group-hover:text-[#0052ff] transition-colors leading-tight">
-                      {project.title}
+                    <h4 className="font-syne font-black text-2xl sm:text-3xl text-[#0f1012] group-hover:text-[#0052ff] transition-colors leading-tight">
+                      {stylexProject.title}
                     </h4>
 
-                    <p className="font-space text-xs text-zinc-600 mt-2 line-clamp-2 leading-relaxed">
-                      {project.subtitle}
+                    <p className="font-space text-sm text-zinc-700 mt-2 leading-relaxed">
+                      {stylexProject.subtitle}
                     </p>
+
+                    {/* Technical Specifications Grid */}
+                    <div className="grid grid-cols-2 gap-3 mt-4 pt-4 border-t border-black/10 font-mono text-xs">
+                      <div className="bg-[#f6f5f0] p-2.5 rounded-lg border border-black/15">
+                        <span className="text-zinc-500 text-[10px] block uppercase font-bold">INK PASSES</span>
+                        <span className="font-bold text-[#0f1012]">3 Spot Inks + Base White</span>
+                      </div>
+                      <div className="bg-[#f6f5f0] p-2.5 rounded-lg border border-black/15">
+                        <span className="text-zinc-500 text-[10px] block uppercase font-bold">SUBSTRATE</span>
+                        <span className="font-bold text-[#0f1012]">D2W Degradable Polymer</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
-                {/* Footer: Color Swatches + Specs Trigger */}
-                <div className="mt-5 pt-3 border-t border-black/10 flex items-center justify-between">
-                  <div className="flex items-center gap-1.5">
-                    {project.palette.map((color, i) => (
+                {/* Footer Swatches */}
+                <div className="mt-6 pt-4 border-t border-black/10 flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <span className="font-mono text-[10px] uppercase text-zinc-500 font-bold mr-1">SPOT PALETTE:</span>
+                    {stylexProject.palette.map((color, i) => (
                       <span
                         key={i}
-                        className="w-3.5 h-3.5 rounded-full border border-black/40 shadow-xs"
+                        className="w-4 h-4 rounded-full border border-black/40 shadow-xs"
                         style={{ backgroundColor: color }}
                         title={color}
                       />
                     ))}
                   </div>
 
-                  <div className="flex items-center gap-1 font-mono text-xs font-bold text-[#0f1012] group-hover:text-[#0052ff] transition-colors uppercase">
-                    <span>SPECS</span>
-                    <ArrowUpRight className="w-3.5 h-3.5 stroke-[2.5]" />
+                  <div className="flex items-center gap-1.5 font-mono text-xs font-bold text-[#0052ff] uppercase">
+                    <span>OPEN DIE-LINE</span>
+                    <ArrowUpRight className="w-4 h-4 stroke-[2.5]" />
                   </div>
                 </div>
-
               </div>
-            ))}
+            )}
+
+            {/* Companion Dossiers: Mivara & OME Stacked (5 Cols) */}
+            <div className="lg:col-span-5 flex flex-col gap-6">
+              {mivaraProject && (
+                <div
+                  onClick={() => handleOpen(mivaraProject)}
+                  className="group relative cursor-pointer select-none bg-white rounded-3xl border-3 border-black p-5 sm:p-6 shadow-[6px_6px_0px_#000000] hover:shadow-[10px_10px_0px_#0052ff] hover:-translate-y-1 transition-all duration-300"
+                >
+                  <div className="flex flex-col sm:flex-row gap-5 items-start">
+                    <div className="relative aspect-4/3 sm:aspect-square w-full sm:w-36 bg-zinc-950 rounded-xl overflow-hidden border-2 border-black shrink-0">
+                      {mivaraProject.mockupImage ? (
+                        <Image
+                          src={mivaraProject.mockupImage}
+                          alt={mivaraProject.title}
+                          fill
+                          className="object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                          sizes="200px"
+                        />
+                      ) : (
+                        <div className="relative w-full h-full bg-[#f0eee6] p-2">
+                          <Image
+                            src={mivaraProject.primaryImage}
+                            alt={mivaraProject.title}
+                            fill
+                            className="object-contain"
+                            unoptimized
+                          />
+                        </div>
+                      )}
+                      <div className="absolute top-2 right-2 bg-black text-white px-2 py-0.5 rounded font-mono text-[9px] font-bold">
+                        {mivaraProject.code}
+                      </div>
+                    </div>
+
+                    <div className="flex-1 min-w-0">
+                      <div className="font-mono text-[11px] text-zinc-500 uppercase">
+                        {mivaraProject.client}
+                      </div>
+                      <h4 className="font-syne font-black text-lg sm:text-xl text-black group-hover:text-[#0052ff] transition-colors leading-tight mt-1">
+                        {mivaraProject.title}
+                      </h4>
+                      <p className="font-space text-xs text-zinc-600 mt-1.5 leading-relaxed line-clamp-2">
+                        {mivaraProject.subtitle}
+                      </p>
+
+                      <div className="mt-3 pt-3 border-t border-black/10 flex items-center justify-between text-xs font-mono">
+                        <span className="text-zinc-600 font-medium">Die-cut handle · 200 GSM</span>
+                        <span className="text-[#0052ff] font-bold flex items-center gap-0.5">
+                          SPECS <ArrowUpRight className="w-3 h-3" />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {omeProject && (
+                <div
+                  onClick={() => handleOpen(omeProject)}
+                  className="group relative cursor-pointer select-none bg-white rounded-3xl border-3 border-black p-5 sm:p-6 shadow-[6px_6px_0px_#000000] hover:shadow-[10px_10px_0px_#0052ff] hover:-translate-y-1 transition-all duration-300"
+                >
+                  <div className="flex flex-col sm:flex-row gap-5 items-start">
+                    <div className="relative aspect-4/3 sm:aspect-square w-full sm:w-36 bg-zinc-950 rounded-xl overflow-hidden border-2 border-black shrink-0">
+                      {omeProject.mockupImage ? (
+                        <Image
+                          src={omeProject.mockupImage}
+                          alt={omeProject.title}
+                          fill
+                          className="object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                          sizes="200px"
+                        />
+                      ) : (
+                        <div className="relative w-full h-full bg-[#f0eee6] p-2">
+                          <Image
+                            src={omeProject.primaryImage}
+                            alt={omeProject.title}
+                            fill
+                            className="object-contain"
+                            unoptimized
+                          />
+                        </div>
+                      )}
+                      <div className="absolute top-2 right-2 bg-black text-white px-2 py-0.5 rounded font-mono text-[9px] font-bold">
+                        {omeProject.code}
+                      </div>
+                    </div>
+
+                    <div className="flex-1 min-w-0">
+                      <div className="font-mono text-[11px] text-zinc-500 uppercase">
+                        {omeProject.client}
+                      </div>
+                      <h4 className="font-syne font-black text-lg sm:text-xl text-black group-hover:text-[#0052ff] transition-colors leading-tight mt-1">
+                        {omeProject.title}
+                      </h4>
+                      <p className="font-space text-xs text-zinc-600 mt-1.5 leading-relaxed line-clamp-2">
+                        {omeProject.subtitle}
+                      </p>
+
+                      <div className="mt-3 pt-3 border-t border-black/10 flex items-center justify-between text-xs font-mono">
+                        <span className="text-zinc-600 font-medium">Reinforced gusset poly</span>
+                        <span className="text-[#0052ff] font-bold flex items-center gap-0.5">
+                          SPECS <ArrowUpRight className="w-3 h-3" />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+
           </div>
 
         </div>

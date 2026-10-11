@@ -8,13 +8,13 @@ export default function WhereIveWorkedSection() {
     {
       role: "Visual & Graphic Designer",
       company: "Commercial Print & Packaging",
-      period: "February 2025 – September 2025",
+      period: "February 2025 - September 2025",
       detail: "500+ Shopping Bag Production Runs // Zero Registration Bleed",
     },
     {
       role: "Design Lead & Instructor",
       company: "Ostad & Skill Platforms",
-      period: "April 2023 – October 2023",
+      period: "April 2023 - October 2023",
       detail: "Mentored 100+ designers across vector graphics & commercial design",
     },
     {

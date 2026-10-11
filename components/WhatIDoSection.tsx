@@ -104,25 +104,62 @@ export default function WhatIDoSection() {
             </p>
           </div>
 
-          {/* Tool Mastery Badges Trio */}
-          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 mt-8">
-            <div className="flex items-center gap-2 px-4 py-2 bg-white rounded-xl border-2 border-black shadow-[3px_3px_0px_#000000]">
-              <span className="w-2.5 h-2.5 rounded-full bg-[#31a8ff]" />
-              <span className="font-syne font-bold text-xs uppercase text-black">
-                Photoshop (Photo Manipulation)
+          {/* Integrated Production Toolchain Architecture */}
+          <div className="mt-10 max-w-4xl mx-auto bg-white rounded-2xl border-2 border-black shadow-[5px_5px_0px_#000000] p-6 sm:p-8 text-left">
+            <div className="flex flex-wrap items-center justify-between gap-2 pb-4 mb-6 border-b border-zinc-200">
+              <span className="font-mono text-xs font-bold uppercase tracking-wider text-zinc-500">
+                PRODUCTION PIPELINE & TOOL SPECIALIZATION
+              </span>
+              <span className="font-mono text-[11px] text-zinc-400">
+                CALIBRATED FOR COMMERCIAL REPRODUCIBILITY
               </span>
             </div>
-            <div className="flex items-center gap-2 px-4 py-2 bg-white rounded-xl border-2 border-black shadow-[3px_3px_0px_#000000]">
-              <span className="w-2.5 h-2.5 rounded-full bg-[#ff9a00]" />
-              <span className="font-syne font-bold text-xs uppercase text-black">
-                Illustrator (Vectors & Prepress)
-              </span>
-            </div>
-            <div className="flex items-center gap-2 px-4 py-2 bg-white rounded-xl border-2 border-black shadow-[3px_3px_0px_#000000]">
-              <span className="w-2.5 h-2.5 rounded-full bg-[#0acf83]" />
-              <span className="font-syne font-bold text-xs uppercase text-black">
-                Figma (UI & Mockups)
-              </span>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {/* Illustrator */}
+              <div className="space-y-2">
+                <div className="flex items-center gap-2">
+                  <span className="px-2 py-0.5 bg-[#ff9a00] text-black font-mono font-bold text-xs rounded">
+                    Ai
+                  </span>
+                  <h4 className="font-syne font-bold text-base text-black">
+                    Vector Engineering
+                  </h4>
+                </div>
+                <p className="font-space text-xs text-zinc-600 leading-relaxed">
+                  Screen-print die-lines, spot color channels, trapping margins, and precision bezier curves for high-volume automated presses.
+                </p>
+              </div>
+
+              {/* Photoshop */}
+              <div className="space-y-2">
+                <div className="flex items-center gap-2">
+                  <span className="px-2 py-0.5 bg-[#31a8ff] text-white font-mono font-bold text-xs rounded">
+                    Ps
+                  </span>
+                  <h4 className="font-syne font-bold text-base text-black">
+                    Imaging & Texture
+                  </h4>
+                </div>
+                <p className="font-space text-xs text-zinc-600 leading-relaxed">
+                  Photo manipulation, texture synthesis, substrate lighting simulation, and high-impact thumbnail composition.
+                </p>
+              </div>
+
+              {/* Figma */}
+              <div className="space-y-2">
+                <div className="flex items-center gap-2">
+                  <span className="px-2 py-0.5 bg-[#0acf83] text-black font-mono font-bold text-xs rounded">
+                    Fg
+                  </span>
+                  <h4 className="font-syne font-bold text-base text-black">
+                    Systems & Prototyping
+                  </h4>
+                </div>
+                <p className="font-space text-xs text-zinc-600 leading-relaxed">
+                  Design token architectures, interactive component states, typography scale calibration, and client presentation systems.
+                </p>
+              </div>
             </div>
           </div>
 

@@ -146,9 +146,7 @@ export default function ThumbnailGallery() {
 
             <div>
               <div className="flex items-center gap-2 font-mono text-[11px] text-zinc-500 uppercase tracking-widest">
-                <span>VOL — 04 ARCHIVE</span>
-                <span>✦</span>
-                <span className="text-[#0052ff] font-bold">MEDIA & SOCIAL</span>
+                <span>MEDIA & SOCIAL ARCHIVE</span>
               </div>
               <h2 className="font-marker text-3xl sm:text-5xl md:text-6xl text-[#0f1012] tracking-wide leading-tight">
                 Thumbnail Design

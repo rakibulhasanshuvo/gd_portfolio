@@ -22,7 +22,7 @@ export default function CreatorAvatarCard({
       <div
         onClick={() => sound.pop()}
         className="relative group cursor-pointer select-none shrink-0"
-        title={`Muhammad Rakibul Hasan ${name} — ${role}`}
+        title={`Muhammad Rakibul Hasan ${name} | ${role}`}
       >
         {/* Soft Ambient Card Glow */}
         <div className="absolute -inset-1.5 bg-gradient-to-b from-[#f59e0b] via-[#ea580c] to-[#c2410c] rounded-[38px] blur-lg opacity-40 group-hover:opacity-70 transition duration-300" />
@@ -441,7 +441,6 @@ export default function CreatorAvatarCard({
           {/* Frosted Translucent Plate 2 */}
           <div className="px-3.5 py-2 bg-black/5 hover:bg-black/10 backdrop-blur-md text-[#18181b] font-syne font-bold text-xs sm:text-sm tracking-wider uppercase rounded-xl border border-black/15 shadow-[2px_2px_0px_#000000] flex items-center gap-2">
             <span>Brand & Print Designer</span>
-            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
           </div>
 
           {/* Yellow Streetwear Accent Badge */}
@@ -460,7 +459,7 @@ export default function CreatorAvatarCard({
           <div
             className="shrink-0 group cursor-pointer"
             onClick={() => sound.click(800)}
-            title="Design Workflow — Figma, Illustrator & Prepress"
+            title="Design Workflow: Figma, Illustrator & Prepress"
           >
             <div className="relative p-2 bg-white rounded-2xl border-2 sm:border-3 border-black shadow-[5px_7px_16px_rgba(0,0,0,0.35)] -rotate-3 transition-transform duration-200 group-hover:rotate-0 group-hover:scale-105">
               <svg
