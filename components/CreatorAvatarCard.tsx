@@ -440,7 +440,7 @@ export default function CreatorAvatarCard({
 
           {/* Frosted Translucent Plate 2 */}
           <div className="px-3.5 py-2 bg-black/5 hover:bg-black/10 backdrop-blur-md text-[#18181b] font-syne font-bold text-xs sm:text-sm tracking-wider uppercase rounded-xl border border-black/15 shadow-[2px_2px_0px_#000000] flex items-center gap-2">
-            <span>Visual Storyteller</span>
+            <span>Brand & Print Designer</span>
             <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
           </div>
 
@@ -535,7 +535,7 @@ export default function CreatorAvatarCard({
                 500+ RUNS
               </span>
               <span className="font-space font-bold text-sm sm:text-base md:text-lg text-zinc-800 leading-snug">
-                of high-volume commercial production in Design industry.
+                of commercial print production across apparel and retail.
               </span>
             </div>
           </div>

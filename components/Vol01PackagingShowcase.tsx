@@ -49,12 +49,11 @@ export default function Vol01PackagingShowcase() {
             <span className="font-mono text-xl sm:text-2xl text-black font-black select-none">\ | /</span>
           </div>
 
-          {/* 3D Brutalist Angled Title (Matching "Digital Dropout 🔥" in Video) */}
+          {/* 3D Brutalist Angled Title */}
           <div className="mt-4 sm:mt-6">
             <h2 className="font-syne font-black text-4xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight uppercase italic drop-shadow-md">
               <span className="extrude-3d-yellow inline-block">Packaging</span>{" "}
               <span className="extrude-3d-white inline-block">Fleet</span>
-              <span className="inline-block ml-3 text-3xl sm:text-5xl not-italic">🔥</span>
             </h2>
             <p className="font-mono text-xs sm:text-sm uppercase tracking-widest text-zinc-600 mt-3 font-semibold">
               500+ COMMERCIAL SCREEN-PRINT RUNS // ZERO REGISTRATION BLEED
@@ -78,13 +77,13 @@ export default function Vol01PackagingShowcase() {
             <div className="flex items-center gap-3">
               <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
               <span className="font-mono text-xs uppercase tracking-widest text-[#f5b800] font-bold">
-                FLAGSHIP COMMERCIAL MASTERWORK // PKG-001
+                FEATURED PACKAGING // PKG-001
               </span>
             </div>
 
             <div className="flex items-center gap-2">
               <span className="px-3 py-1 rounded-full bg-[#27272a] border border-zinc-700 font-mono text-xs text-emerald-400 font-bold">
-                5,000+ RUNS ZERO BLEED
+                5,000+ RUNS ZERO DEFECT
               </span>
               <span className="px-3 py-1 rounded-full bg-[#27272a] border border-zinc-700 font-mono text-xs text-zinc-300 font-bold">
                 120 GSM ECO KRAFT

@@ -42,11 +42,10 @@ export default function WhatIDoSection() {
             <FloatingToolBadge tool="ps" rotate={-10} size="md" />
           </div>
 
-          {/* Distressed Headline: "What do i Do? 🔥" */}
+          {/* Headline: "What I Do" */}
           <div className="inline-block relative">
             <h2 className="font-marker text-4xl sm:text-6xl md:text-7xl text-[#0f1012] tracking-wide inline-flex items-center gap-3 drop-shadow-sm">
-              <span>What do i Do?</span>
-              <span className="text-3xl sm:text-5xl animate-bounce">🔥</span>
+              <span>What I Do</span>
             </h2>
             <div className="h-1.5 w-3/4 mx-auto bg-[#f5b800] rounded-full mt-2" />
           </div>
@@ -96,15 +95,12 @@ export default function WhatIDoSection() {
             Tools I&apos;m fluent in.
           </h3>
 
-          {/* Statement Paragraph from Video */}
+          {/* Statement Paragraph */}
           <div className="mt-6 max-w-2xl mx-auto">
             <p className="font-space text-base sm:text-xl text-zinc-800 leading-relaxed font-medium">
               <strong className="text-black font-bold">Adobe Photoshop</strong>,{" "}
-              <strong className="text-black font-bold">Adobe Illustrator</strong>,{" "}
-              <strong className="text-black font-bold">Figma</strong>, and Explore{" "}
-              <span className="text-[#0052ff] font-bold">AI tools</span> and try to
-              integrate it across visual direction, concept development, packaging
-              die-lines, and high-velocity creative exploration.
+              <strong className="text-black font-bold">Adobe Illustrator</strong>, and{" "}
+              <strong className="text-black font-bold">Figma</strong> across brand identity, screen-print packaging die-lines, and production-ready vector graphics.
             </p>
           </div>
 

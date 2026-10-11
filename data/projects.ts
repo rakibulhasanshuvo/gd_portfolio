@@ -53,7 +53,7 @@ export const PROJECTS: Project[] = [
     mockupType: 'kraft_tote',
     palette: ['#18181B', '#F97316', '#FAFAF9'],
     tags: ['Screen Print', 'Non-Woven Tote', 'Vector Die-Line', 'Outdoor Retail'],
-    description: 'Engineered for high-volume commercial screen printing with zero registration errors. Designed with heavy stroke calibration to ensure clean ink release on coarse non-woven fabric.',
+    description: 'Commercial screen printing with calibrated stroke weights to ensure clean ink release and sharp edge definition on coarse non-woven fabric.',
     specs: [
       { label: 'Print Method', value: '2-Color Screen Print' },
       { label: 'Substrate', value: '120 GSM Eco Non-Woven Kraft' },
@@ -83,8 +83,8 @@ export const PROJECTS: Project[] = [
     vectorFile: '/assets/bags/stylex_wear.svg',
     mockupType: 'urban_plastic_tote',
     palette: ['#090A0F', '#E11D48', '#38BDF8', '#FFFFFF'],
-    tags: ['High-Velocity Production', 'Streetwear', 'Multi-Layer Vector', 'Retail'],
-    description: 'High-complexity retail bag combining raw urban typography, custom vector stamps, and multi-pass spot ink layers. Calibrated for high-speed automated screen presses without color bleeding.',
+    tags: ['Commercial Production', 'Streetwear', 'Multi-Layer Vector', 'Retail'],
+    description: 'Retail packaging combining urban typography, custom vector stamps, and multi-pass spot ink layers. Calibrated for automated screen presses with controlled ink traps.',
     specs: [
       { label: 'File Complexity', value: '747KB Precision Vector Curves' },
       { label: 'Ink Passes', value: '3 Spot Inks + Base White' },
@@ -135,7 +135,7 @@ export const PROJECTS: Project[] = [
     id: 'ome-sports-bag',
     code: 'PKG-004',
     title: 'OME Sports Zone Gear Bag',
-    subtitle: 'Dynamic high-velocity athletic branding for sports retail packaging',
+    subtitle: 'Athletic branding and typography for sports retail packaging',
     category: 'packaging',
     categoryLabel: 'Athletic Packaging',
     year: '2025',
@@ -426,7 +426,7 @@ export const PROJECTS: Project[] = [
     mockupType: 'poster_mockup',
     palette: ['#6B1724', '#F59F00', '#E8590C', '#FBF6EB'],
     tags: ['Restaurant Flyer', 'F&B Marketing', 'Dishes Cascade', 'Price Anchor', 'Offset CMYK'],
-    description: 'High-converting promotional restaurant collateral featuring appetizing overhead culinary photography, dynamic organic wave framing, and psychological strikethrough discount pricing. Designed for multi-channel print distribution and high-traffic display stands.',
+    description: 'Promotional restaurant collateral featuring overhead culinary photography, organic wave framing, and promotional pricing layouts. Designed for print distribution and display stands.',
     specs: [
       { label: 'Format', value: 'Standard A5 Promotional Handout (148 x 210 mm)' },
       { label: 'Paper Grade', value: '170 GSM Gloss Art Paper' },
@@ -554,16 +554,16 @@ export const PROJECTS: Project[] = [
 export const DESIGNER_INFO = {
   name: 'Muhammad Rakibul Hasan Shuvo',
   role: 'Visual & UI Designer | Brand & Graphic Specialist',
-  bio: 'Specializing in translating bold ideas into polished digital interfaces, brand identities, and production-engineered packaging. Expert in Adobe Illustrator, Photoshop, and Figma, with a foundational Computer Science background that bridges design with technical execution.',
+  bio: 'Designing digital interfaces, brand identities, and commercial packaging. Proficient in Adobe Illustrator, Photoshop, and Figma, with a Computer Science background that connects visual design with technical execution.',
   email: 'm.rakibul.h45@gmail.com',
   phone: '+880 1404-591770',
   location: 'Dhaka, Bangladesh',
   timezone: 'Asia/Dhaka',
   stats: [
-    { label: 'Commercial Bags Engineered', value: '500+', detail: 'Zero registration or bleed errors' },
-    { label: 'Marketing Assets Delivered', value: '50+', detail: 'High-converting social & print' },
-    { label: 'UI Mockups & Screens', value: '15+', detail: 'Figma component-driven layouts' },
-    { label: 'Milestone Delivery Rate', value: '100%', detail: 'Tight-deadline turnaround record' },
+    { label: 'Commercial Bags Produced', value: '500+', detail: 'Delivered without registration flaws' },
+    { label: 'Marketing Assets Delivered', value: '50+', detail: 'Print and digital campaign collateral' },
+    { label: 'UI Mockups & Screens', value: '15+', detail: 'Figma component systems & screens' },
+    { label: 'Milestone Delivery Rate', value: '100%', detail: 'On-time project delivery' },
   ],
   education: [
     {

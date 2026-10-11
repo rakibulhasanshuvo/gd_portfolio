@@ -1,6 +1,6 @@
 # Muhammad Rakibul Hasan Shuvo — Graphic & Visual Designer Portfolio (2026)
 
-> High-impact visual design, production-engineered commercial screen-print packaging (500+ bag runs), corporate brand identity systems, and high-converting marketing collateral.
+> Graphic design portfolio featuring commercial screen-print packaging (500+ bag production runs), brand identities, vector die-lines, and editorial print.
 
 [![Live Site](https://img.shields.io/badge/Live_Site-gdportfolio--omega.vercel.app-0052ff?style=flat&logo=vercel)](https://gdportfolio-omega.vercel.app/)
 [![Next.js](https://img.shields.io/badge/Next.js-16.3.8-black?style=flat&logo=next.js)](https://nextjs.org/)
@@ -15,14 +15,14 @@
 
 ## 🎨 Overview & Design Architecture
 
-This portfolio is an interactive digital experience engineered to showcase commercial print craftsmanship, brand identity systems, and high-velocity digital marketing assets. Combining raw brutalist typography, authentic photocopy paper textures, and tactile audio feedback, it translates tactile physical print media into the digital browser.
+Interactive portfolio showcasing commercial print production, brand identity systems, and editorial print design. Built with brutalist zine typography, paper halftone textures, and Web Audio feedback to bring physical print media to the browser.
 
 ### Key Highlights & Showcase Volumes
 
 1. **VOL — 01 // Packaging Fleet**
-   - **500+ commercial shopping bag production runs** delivered across high-street apparel, boutique luxury brands, and athletic retail.
-   - Interactive dual-mode visualizer: seamless toggle between photorealistic physical 3D bag mockups and ultra-crisp vector production plates.
-   - Flagship projects: *OFFGRID Tactical Wear*, *Stylex Wear*, *Mivara Fashion House*, and *OME Sports Zone*.
+   - **500+ commercial shopping bag production runs** delivered across apparel, boutique luxury brands, and athletic retail.
+   - Interactive dual-mode visualizer: toggle between 3D bag mockups and vector production die-lines.
+   - Featured projects: *OFFGRID Tactical Wear*, *Stylex Wear*, *Mivara Fashion House*, and *OME Sports Zone*.
 
 2. **Interactive Prepress Engineering Darkroom**
    - Simulated prepress color separation console inspecting spot color channels, registration crosshairs, die-cut crease lines, and substrate textures.

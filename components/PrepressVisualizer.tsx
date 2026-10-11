@@ -392,7 +392,7 @@ export default function PrepressVisualizer() {
                   <span>COMMERCIAL PRODUCTION GUARANTEE</span>
                 </div>
                 <p className="text-[11px] text-zinc-400 leading-relaxed">
-                  Over 500 commercial bag runs engineered with zero registration bleed defects. Every path is vector-trapped, node-optimized, and stroke-calibrated for high-velocity press runs.
+                  Over 500 commercial bag production runs. Vector paths, spot color traps, and stroke weights calibrated for clean screen-print release.
                 </p>
                 <div className="pt-2 flex items-center justify-between text-[10px] text-zinc-500 border-t border-zinc-850">
                   <span>SQUEEGEE: 75 SHORE A</span>

@@ -104,7 +104,7 @@ export default function Hero() {
                 onClick={() => scrollTo("projects-section")}
                 className="flex items-center gap-2.5 px-6 sm:px-8 py-3.5 bg-[#0f1012] hover:bg-[#0052ff] text-white font-syne font-bold text-xs sm:text-sm tracking-wider uppercase rounded-full border-2 border-black shadow-[4px_4px_0px_#f5b800] hover:shadow-[6px_6px_0px_#000000] hover:-translate-y-0.5 active:translate-y-0 transition-all cursor-pointer group"
               >
-                <span>EXPLORE {PROJECTS.length} MASTERWORKS</span>
+                <span>VIEW ALL {PROJECTS.length} PROJECTS</span>
                 <ArrowDown className="w-4 h-4 text-[#f5b800] group-hover:translate-y-0.5 transition-transform" />
               </button>
 
@@ -125,7 +125,7 @@ export default function Hero() {
                 className="flex items-center gap-2 px-5 py-3.5 bg-[#f6f5f0] hover:bg-white text-[#0f1012] font-mono font-semibold text-xs uppercase rounded-full border-2 border-black shadow-[3px_3px_0px_#000000] hover:-translate-y-0.5 transition-all cursor-pointer"
               >
                 <FileText className="w-4 h-4 text-[#e63946]" />
-                <span>EXECUTIVE CV</span>
+                <span>VIEW CV</span>
                 <ExternalLink className="w-3.5 h-3.5 text-zinc-500" />
               </a>
             </div>
@@ -133,7 +133,7 @@ export default function Hero() {
             {/* Quick Live Telemetry Pill */}
             <div className="flex items-center gap-2 font-mono text-xs text-zinc-700 bg-white px-4 py-2 rounded-full border-2 border-black shadow-[2px_2px_0px_#000000]">
               <Sparkles className="w-3.5 h-3.5 text-[#f5b800]" />
-              <span className="font-bold">500+ BAGS // ZERO BLEED RECORD</span>
+              <span className="font-bold">500+ BAG RUNS // ZERO REGISTRATION ERRORS</span>
             </div>
 
           </div>
